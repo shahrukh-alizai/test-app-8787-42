@@ -10,7 +10,7 @@ class CustomText(models.Model):
     title = models.CharField(
         max_length=150,
     )
-    demo = models.CharField(
+    new = models.CharField(
         null=True,
         blank=True,
         max_length=256,
