@@ -10,12 +10,12 @@ class CustomText(models.Model):
     title = models.CharField(
         max_length=150,
     )
-    test1 = models.CharField(
+    demo = models.CharField(
         null=True,
         blank=True,
         max_length=256,
     )
-    test2 = models.BigIntegerField(
+    phone = models.BigIntegerField(
         null=True,
         blank=True,
     )
