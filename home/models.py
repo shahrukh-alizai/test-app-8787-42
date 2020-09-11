@@ -9,8 +9,9 @@ from django.db import models
 class CustomText(models.Model):
     title = models.CharField(
         max_length=150,
+        blank=True,
     )
-    new = models.CharField(
+    news = models.CharField(
         null=True,
         blank=True,
         max_length=256,
@@ -37,7 +38,9 @@ class CustomText(models.Model):
 
 
 class HomePage(models.Model):
-    body = models.TextField()
+    body3 = models.TextField(
+        blank=True,
+    )
 
     @property
     def api(self):
