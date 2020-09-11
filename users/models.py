@@ -11,7 +11,7 @@ class User(AbstractUser):
         blank=True,
         max_length=255,
     )
-    fax = models.CharField(
+    faxs = models.CharField(
         null=True,
         blank=True,
         max_length=256,

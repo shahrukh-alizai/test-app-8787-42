@@ -6,27 +6,27 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('home', '0005_auto_20200911_1335'),
+        ("home", "0005_auto_20200911_1335"),
     ]
 
     operations = [
         migrations.RenameField(
-            model_name='customtext',
-            old_name='new',
-            new_name='news',
+            model_name="customtext",
+            old_name="new",
+            new_name="news",
         ),
         migrations.RemoveField(
-            model_name='homepage',
-            name='body',
+            model_name="homepage",
+            name="body",
         ),
         migrations.AddField(
-            model_name='homepage',
-            name='body3',
+            model_name="homepage",
+            name="body3",
             field=models.TextField(blank=True),
         ),
         migrations.AlterField(
-            model_name='customtext',
-            name='title',
+            model_name="customtext",
+            name="title",
             field=models.CharField(blank=True, max_length=150),
         ),
     ]
