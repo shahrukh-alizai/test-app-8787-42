@@ -12,14 +12,14 @@ class User(AbstractUser):
         max_length=255,
     )
     address = models.CharField(
-        max_length=256,
         null=True,
         blank=True,
+        max_length=256,
     )
     phone = models.CharField(
-        max_length=256,
         null=True,
         blank=True,
+        max_length=256,
     )
     bio = models.BigIntegerField(
         null=True,

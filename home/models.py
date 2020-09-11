@@ -10,6 +10,19 @@ class CustomText(models.Model):
     title = models.CharField(
         max_length=150,
     )
+    test1 = models.CharField(
+        max_length=256,
+        null=True,
+        blank=True,
+    )
+    test2 = models.BigIntegerField(
+        null=True,
+        blank=True,
+    )
+    book = models.BigIntegerField(
+        null=True,
+        blank=True,
+    )
 
     def __str__(self):
         return self.title
