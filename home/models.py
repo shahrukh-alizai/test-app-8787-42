@@ -11,9 +11,9 @@ class CustomText(models.Model):
         max_length=150,
     )
     test1 = models.CharField(
-        max_length=256,
         null=True,
         blank=True,
+        max_length=256,
     )
     test2 = models.BigIntegerField(
         null=True,
