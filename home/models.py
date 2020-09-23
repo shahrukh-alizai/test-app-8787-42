@@ -48,13 +48,6 @@ class HomePage(models.Model):
         blank=True,
         related_name="homepage_demo",
     )
-    test = models.ForeignKey(
-        "users.User",
-        on_delete=models.CASCADE,
-        null=True,
-        blank=True,
-        related_name="homepage_test",
-    )
 
     @property
     def api(self):
