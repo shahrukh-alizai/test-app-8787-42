@@ -41,6 +41,20 @@ class HomePage(models.Model):
     body3 = models.TextField(
         blank=True,
     )
+    demo = models.ForeignKey(
+        "home.CustomText",
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True,
+        related_name="homepage_demo",
+    )
+    test = models.ForeignKey(
+        "users.User",
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True,
+        related_name="homepage_test",
+    )
 
     @property
     def api(self):
@@ -49,3 +63,45 @@ class HomePage(models.Model):
     @property
     def field(self):
         return "body"
+
+
+class MewModelsdf(models.Model):
+    "Generated Model"
+    title = models.CharField(
+        blank=True,
+        max_length=150,
+    )
+    news = models.CharField(
+        null=True,
+        blank=True,
+        max_length=256,
+    )
+    phone = models.BigIntegerField(
+        null=True,
+        blank=True,
+    )
+    book = models.BigIntegerField(
+        null=True,
+        blank=True,
+    )
+
+
+class Dewtextddfddf(models.Model):
+    "Generated Model"
+    title = models.CharField(
+        blank=True,
+        max_length=150,
+    )
+    news = models.CharField(
+        null=True,
+        blank=True,
+        max_length=256,
+    )
+    phone = models.BigIntegerField(
+        null=True,
+        blank=True,
+    )
+    book = models.BigIntegerField(
+        null=True,
+        blank=True,
+    )
